@@ -1,0 +1,74 @@
+.sigmawrapper {
+    display: flex;
+    flex-flow: row;
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+}
+
+.sigmagraph {
+    display: flex;
+    flex-flow: column;
+    background-color: azure;
+    width: 100%;
+    height: 100%;
+}
+
+.toolbar {
+    display: flex;
+    flex-flow: column;
+    background-color: #31363b;
+    align-items: center;
+    width: 32px;
+    height: 100%;
+}
+
+.button {
+    width: 32px;
+    height: 32px;
+    /*padding: 2px;*/
+    display: block;
+    align-items: center;
+    /*background-color: transparent;  Color de fondo */
+    /*border-color: #dadce0;*/
+    color: #FFFFFF; /* Color del texto */
+    text-align: center;
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none; /* Quita subrayado en caso de ser un enlace */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Animación */
+}
+
+  /* Efecto al pasar el ratón por encima */
+.button:hover {
+    background-color: #1e1e1e; /* Color de fondo al hacer hover 252525*/
+}
+
+  /* Efecto al presionar el botón */
+.button:active {
+    background-color: bisque; /* Color de fondo al hacer clic */
+}
+
+.btnGroup {
+    background-image: url('./frontend/sigmawrapper/imgs/make-group.svg');
+    background-size: 65% 65%; /* Ajusta el tamaño del SVG como porcentaje del div */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btnFitGraph {
+    background-image: url('./frontend/sigmawrapper/imgs/fitgraph.svg');
+    background-size: 65% 65%; /* Ajusta el tamaño del SVG como porcentaje del div */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nodesGroups {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border-color: #707070;
+    border-width: 2px;
+    z-index: 9999;
+}
